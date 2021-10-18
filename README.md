@@ -53,3 +53,27 @@ Una vez unidas, podemos borrar la rama `tarea4-branch` al ser igual a la `main`.
 Como podemos observar, los cambios ya están en producción.
 
 ![](a/11.png)
+
+# Apartado b)
+
+En esta ocasión se nos pide que creemos un repositorio nuevo, hagamos cambios en él y lo subamos a remoto.
+
+Para ello tenemos que crear un repositorio en GitHub ya que eso no puede hacer desde la consola. Así que lo hacemos tal y como hicimos en la tarea 3.
+
+![](b/01.png)
+
+En consola, ejecutamos `git init` para iniciar un repositorio `git` en local y, allí, creamos un archivo README.md y lo registramos en `git` mediante el ya conocido `git add` y `git commit`.
+
+![](b/02.png)
+
+Cuando creamos el repositorio en GitHub nos da la dirección que hemos de copiar para añadirlo como remoto en nuestro repositorio local.
+
+![](b/03.png)
+
+Vamos a la terminal y ejecutamos `git remote add origin` seguido de la dirección que hemos copiado. Ahora nuestro repositorio local ya sabe hacia donde apuntar cuando hagamos `push` y `pull`. Como que hemos añadido un archivo que ya está en seguimiento, lo mandamos al remoto con `git push`.
+
+![](b/04.png)
+
+Al actualizar la página de GitHub encontramos los cambios hechos en local como pretendíamos.
+
+![](b/05.png)
