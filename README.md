@@ -77,3 +77,23 @@ Vamos a la terminal y ejecutamos `git remote add origin` seguido de la direcció
 Al actualizar la página de GitHub encontramos los cambios hechos en local como pretendíamos.
 
 ![](b/05.png)
+
+# Apartado c)
+
+En este apartado queremos realizar cambios a un repositorio ya existente y, para ello, utilizamos una rama que está en remoto pero no en local. Las modificaciones se realizarán en local, así que, para tener la rama en local deberemos importarla.
+
+Para la realización de esta práctica utilizaremos el mismo repositorio del apartado anterior. Como que no tenemos ninguna rama en ella, la creamos como ya hemos hecho en la tarea 3.
+
+![](c/01.png)
+
+En local debemos importar la nueva rama creada mediante un `git pull`. Nos cambiamos a la nueva rama para trabajar desde allí mediante un `checkout`. Añadimos una serie de líneas al README.md porque eso de tenerlo vacío no tiene demasiado sentido.
+
+Cuando hemos terminado de editar el archivo le hacemos el seguimiento como ya hemos hecho tantas veces (`git add`), hacemos un `commit` y publicamos los cambios con un `push`.
+
+![](c/02.png)
+
+Ahora los cambios ya se encuentran en el repositorio remoto, concretamente, en la rama que habíamos creado ya que la rama local estaba configurada para hacer seguimiento a la rama remota.
+
+![](c/03.png)
+
+Como pasaba en el apartado a), si quisiéramos hacer que los cambios pasaran a producción deberíamos hacer un `pull request` pero, como que eso ya se ha hecho allí, no volveremos a repetir el proceso.
